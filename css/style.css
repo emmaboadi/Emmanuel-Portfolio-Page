@@ -10,7 +10,32 @@ body {
   background-color: rgb(128, 130, 135);
 }
 
-.hero {
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  background-color: aquamarine;
+  width: 25%;
+  color: rgb(128, 130, 135);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 10px;
+}
+
+nav a {
+  color: aquamarine;
+}
+
+
+
+.hero-banner {
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
@@ -22,26 +47,16 @@ body {
 nav {
   padding-top: 15px;
   margin-right: 20px;
-  float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
 
-/* Removes bullet points from the list items in the navigation menu */
-nav ul {
-  list-style-type: none;
-}
-/* Displays the list items in the navigation menu side by side*/
-nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
 
 .grid-container { 
   margin: 0px 5%;
   display: grid;
-  height: 500px;
-
+  min-height: 500px;
+  height: 70vh;
   grid-template-rows: 75% 25%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
@@ -52,6 +67,7 @@ nav ul li {
 #Project1 {
   grid-area: Project1;
   background-image: url("../images/02-portfolio-1.jpg");
+  cursor: pointer;
 }
 
 #Project2 {
@@ -76,4 +92,13 @@ nav ul li {
   align-items: center;
   display: flex;
   position: relative;
+}
+
+#ContactInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  margin-right: 20px;
 }
