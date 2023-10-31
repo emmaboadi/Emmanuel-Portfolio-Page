@@ -7,7 +7,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(128, 130, 135);
+  background-color: rgb(36, 36, 37);
+  color: white;
 }
 
 header {
@@ -33,15 +34,40 @@ nav a {
   color: aquamarine;
 }
 
+.hero-banner p { 
+  background-color: aquamarine;
+  color: rgb(128, 130, 135);
+  text-align: center;
+}
+
+.hero-banner h2 {
+  text-align: end;
+}
 
 
 .hero-banner {
-  height: 200px;
+  height: 500px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/MyPhoto.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  
+}
+
+
+.subtitle {
+  font-size: 30px;
+}
+
+.subtitle h2 {
+  margin-top: 20px;
+  font-size: 60px;
+  color: white;
+}
+
+span {
+  color: aquamarine;
 }
 
 nav {
@@ -51,6 +77,15 @@ nav {
   font-size: 20px;
 }
 
+nav a:hover, nav a:focus {
+	background-color:aquamarine;
+	color:black;
+	outline: none;
+}
+
+ h2 {
+  color: aquamarine;
+ }
 
 .grid-container { 
   margin: 0px 5%;
@@ -59,6 +94,8 @@ nav {
   height: 70vh;
   grid-template-rows: 75% 25%;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
   grid-template-areas:
   "Project1 Project1 Project1"
   "Project2 Project3 Project4";
@@ -66,8 +103,9 @@ nav {
 
 #Project1 {
   grid-area: Project1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/Horiseon-Aseesibility.png");
   cursor: pointer;
+  background-position: top;
 }
 
 #Project2 {
@@ -94,11 +132,39 @@ nav {
   position: relative;
 }
 
+.heading {
+  background-color: aquamarine;
+  width: 25%;
+  color: rgb(128, 130, 135);
+  text-align: end;
+}
+
 #ContactInfo {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-evenly;
   padding-top: 15px;
   margin-right: 20px;
+}
+
+#ContactInfo a {
+  color: aquamarine;
+}
+
+@media (min-width: 800px) {
+  p {font-size: 1.5rem; 
+  }
+
+}
+
+
+@media (min-width: 600px) {
+  p {font-size: 1.2rem; 
+  }
+
+nav a {
+  display: inline-block;
+}
+
 }
