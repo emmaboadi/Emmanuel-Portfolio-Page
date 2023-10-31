@@ -1,7 +1,9 @@
+/* Set box-sizing to border-box for all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Define global styles for the body */
 body {
   margin: 0;
   padding: 0;
@@ -11,11 +13,13 @@ body {
   color: white;
 }
 
+/* Style the header section */
 header {
   display: flex;
   flex-direction: row;
 }
 
+/* Style the main heading in the header */
 header h1 {
   background-color: aquamarine;
   width: 25%;
@@ -23,6 +27,8 @@ header h1 {
   text-align: center;
 }
 
+
+/* Style the navigation links in the header */
 nav {
   display: flex;
   align-items: center;
@@ -34,17 +40,19 @@ nav a {
   color: aquamarine;
 }
 
+/* Style the text in the hero banner */
 .hero-banner p { 
   background-color: aquamarine;
   color: rgb(128, 130, 135);
   text-align: center;
 }
 
+/* Style the subheading in the hero banner */
 .hero-banner h2 {
   text-align: end;
 }
 
-
+/* Style the background section */
 .hero-banner {
   height: 500px;
   width: 100%;
@@ -66,10 +74,12 @@ nav a {
   color: white;
 }
 
+/* Style the 'Emmanuel' text with a specific color */
 span {
   color: aquamarine;
 }
 
+/* Additional styles for the navigation */
 nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -77,16 +87,19 @@ nav {
   font-size: 20px;
 }
 
+/* Define hover and focus styles for navigation links */
 nav a:hover, nav a:focus {
 	background-color:aquamarine;
 	color:black;
 	outline: none;
 }
 
+/* Style heading elements */
  h2 {
   color: aquamarine;
  }
 
+ /* Style the grid container for projects */
 .grid-container { 
   margin: 0px 5%;
   display: grid;
@@ -100,6 +113,8 @@ nav a:hover, nav a:focus {
   "Project1 Project1 Project1"
   "Project2 Project3 Project4";
 }
+
+/* Define styles for individual projects */
 
 #Project1 {
   grid-area: Project1;
@@ -123,6 +138,8 @@ nav a:hover, nav a:focus {
   background-image: url("../images/02-portfolio-4.jpg");
 }
 
+
+/* Style common attributes for project elements */
 .Projects {
   background-position: center;
   background-repeat: no-repeat;
@@ -132,6 +149,7 @@ nav a:hover, nav a:focus {
   position: relative;
 }
 
+/* Style the heading text for projects */
 .heading {
   background-color: aquamarine;
   width: 25%;
@@ -139,6 +157,7 @@ nav a:hover, nav a:focus {
   text-align: end;
 }
 
+/* Style the contact info section */
 #ContactInfo {
   display: flex;
   flex-direction: row;
@@ -148,10 +167,12 @@ nav a:hover, nav a:focus {
   margin-right: 20px;
 }
 
+/* Style links in the contact info section */
 #ContactInfo a {
   color: aquamarine;
 }
 
+/* Define media queries for responsive design */
 @media (min-width: 800px) {
   p {font-size: 1.5rem; 
   }
